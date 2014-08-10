@@ -10,10 +10,9 @@ License: GPL v2 or later
 */
 
 function mywfx_show_hooks(){
-	$output = '<div style="overflow:auto; background-color: rgba(133, 133, 133, 0.75); clear: both;">';
-	$output .= '<p style="color:#fff; margin:0px; padding: 0px; font-size:0.8em">Wonderflux hook: &#x27;' . current_filter() . '&#x27;</p>';
-	$output .= '</div>';
-	echo $output;
+
+	$debug_style = apply_filters( 'wflux_debug_show_hooks_css', 'display: inline-block; background-color: rgba(127, 127, 127, 0.7); border: 1px solid #212121; margin: 0; font-size: 0.8em; color: #fff;' );
+	echo '<p style="'.esc_attr($debug_style).'">Wonderflux hook: &#x27;' . current_filter() . '&#x27;</p>';
 }
 
 function mywfx_do_show_hooks(){
