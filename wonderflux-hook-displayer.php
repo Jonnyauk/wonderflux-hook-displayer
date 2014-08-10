@@ -2,9 +2,9 @@
 /*
 Plugin Name: Wonderflux hook displayer
 Plugin URI: http://wonderflux.com
-Description: When logged in as a user has capability of manage_options, this plugin reveals the location of all Wonderflux display hooks within your template.
+Description: When logged in as a user has capability of manage_options, this plugin reveals the location of all relevant Wonderflux display hooks within your theme.
 Author: Jonny Allbut
-Version: 0.1
+Version: 0.11
 Author URI: http://jonnya.net
 License: GPL v2 or later
 */
