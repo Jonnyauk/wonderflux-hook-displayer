@@ -18,7 +18,7 @@ function wfx_hd_show_hooks(){
 
 function wfx_hd_do_show_hooks(){
 
-	// Wonderflux includes this functionalty in the core from version 2.0
+	// Wonderflux includes this functionality in the core from version 2.0
 	if ( function_exists('wfx_show_hooks') ) return;
 
 	$user_priv = ( has_filter('wflux_debug_show_hooks') ) ? apply_filters( 'wflux_debug_show_hooks', false ) : current_user_can( 'manage_options' );
