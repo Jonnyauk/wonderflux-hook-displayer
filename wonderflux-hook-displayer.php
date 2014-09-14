@@ -2,9 +2,9 @@
 /*
 Plugin Name: Wonderflux hook displayer
 Plugin URI: http://wonderflux.com
-Description: When logged in as a user has capability of manage_options (can be override with wflux_debug_show_hooks filter) and WF_DEBUG constant defined as true, this plugin reveals the location of all relevant Wonderflux display hooks within your theme. NOTE: NOT REQUIRED WITH WONDERFLUX v2.0 or above - it's included in the Wonderflux core code!
+Description: When logged in as a user has capability of manage_options (can be override with wflux_debug_show_hooks filter) and WF_DEBUG constant defined as true, this plugin reveals the location of all relevant Wonderflux display hooks within your theme. NOTE: NOT REQUIRED WITH WONDERFLUX v1.2 or above - it's included in the Wonderflux core code!
 Author: Jonny Allbut
-Version: 0.2
+Version: 0.21
 Author URI: http://jonnya.net
 License: GPL v2 or later
 */
@@ -109,7 +109,7 @@ function wfx_hookd_show_hooks(){
 
 function wfx_hookd_do_show_hooks(){
 
-	// Wonderflux includes this functionality in the core from version 2.0
+	// Wonderflux includes this functionality in the core from version 1.2
 	if ( function_exists('wfx_show_hooks') ) return;
 
 	$user_priv = ( has_filter('wflux_debug_show_hooks') ) ? apply_filters( 'wflux_debug_show_hooks', false ) : current_user_can( 'manage_options' );
